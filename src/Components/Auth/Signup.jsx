@@ -160,17 +160,29 @@ const Signup = ({ togglePanel }) => {
             helperText={errors.phoneNumber}
           />
           <FormControl fullWidth error={!!errors.gender}>
-            <InputLabel>Gender</InputLabel>
-            <Select
+            <TextField
+              // id="outlined-select-currency"
+              select
+              label="Gender"
+              // defaultValue="Gender"
+              name="gender"
+              required
+              value={formData.gender}
+              onChange={handleChange}
+              placeholder="Select Your Gender"
+              // helperText="Please select your currency"
+            >
+              {/* <Select
               name="gender"
               value={formData.gender}
               required
               onChange={handleChange}
-            >
+            > */}
               <MenuItem value="male">Male</MenuItem>
               <MenuItem value="female">Female</MenuItem>
               <MenuItem value="other">Other</MenuItem>
-            </Select>
+              {/* </Select> */}
+            </TextField>
           </FormControl>
         </div>
 

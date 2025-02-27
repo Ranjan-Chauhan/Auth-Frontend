@@ -3,6 +3,7 @@ import { Route, Routes } from "react-router-dom";
 import Layout from "./Components/Layout/Layout";
 import Auth from "./Components/Auth/Auth";
 import Home from "./Components/Home";
+
 const App = () => {
   return (
     <>
